@@ -34,3 +34,11 @@ To double check that all your keys are ok, there's another script `aws_test_keys
     aws sts get-caller-identity
     
 Which is an AWS command guaranteed to succeed if the keys are valid; it requires no permissions.
+
+## Inactive keys
+
+If you have some account that you don't want rotated, you can add `.inactive` to the filename, and the scripts will skip that account.
+
+# Why not use aws profiles? 
+
+Because not all tools, languages, libraries support reading the aws profiles config files, but basically everything supports having these keys in environment variables.
