@@ -12,7 +12,7 @@ These assume that you have a folder with a file per account that export your acc
 
 And the content of each file should look something export the AWS account credentials (so it can be sourced from bash or some other script):
 
-    $ cat /some/secure/path/my_acount
+    $ cat /some/secure/path/my_account
     export AWS_ACCESS_KEY_ID=TSRQPONMLKJIHGFEDCBA
     export AWS_SECRET_ACCESS_KEY=ABCDEFGHIJKLABCDEFGHIJKL
     export AWS_USERNAME=My.User.Name
